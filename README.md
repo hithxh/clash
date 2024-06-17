@@ -1,5 +1,5 @@
 ## 教程
-```https://mirror.ghproxy.com/raw.githubusercontent.com/hithxh/clash/main/README.md```
+```https://raw.githubusercontent.com/hithxh/clash/main/README.md```
 
 
 ## VPS
@@ -18,7 +18,7 @@
 - 客户端：
   - clash-nyanpasu https://github.com/LibNyanpasu/clash-nyanpasu/releases
   - clash-verge-rev https://github.com/clash-verge-rev/clash-verge-rev/releases
-- 订阅地址： https://mirror.ghproxy.com/raw.githubusercontent.com/hithxh/clash/main/config.yaml
+- 订阅地址： https://raw.githubusercontent.com/hithxh/clash/main/config.yaml
 
 ## 手机
 - 客户端
