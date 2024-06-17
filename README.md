@@ -1,4 +1,5 @@
-
+## 教程
+https://mirror.ghproxy.com/raw.githubusercontent.com/hithxh/clash/main/README.md
 
 ## 电脑
 - 客户端：
