@@ -1,7 +1,3 @@
-## 教程
-```https://raw.githubusercontent.com/hithxh/clash/main/README.md```
-
-
 ## VPS
 - $10.29 /年|1GB内存|1CPU|20GB SSD|4T月流量|1Gbps带宽|1个IPv4地址|https://my.racknerd.com/cart.php?a=add&pid=810
 
