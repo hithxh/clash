@@ -141,6 +141,7 @@ rule-providers:
     interval: 86400
 
 rules:
+  - IP-CIDR,1.1.1.3/32,DIRECT
   - RULE-SET,applications,DIRECT
   - DOMAIN,clash.razord.top,DIRECT
   - DOMAIN,yacd.haishan.me,DIRECT
