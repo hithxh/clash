@@ -39,8 +39,8 @@ proxy-groups:
   - name: PROXY
     type: select
     proxies:
-      - jose
-      - seattle
+      - San Jose
+      - Seattle
       # - hw
       
 rule-providers:
