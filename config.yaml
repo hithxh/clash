@@ -27,7 +27,7 @@ proxies:
     password: f35fa72c
     sni: www.bing.com
     skip-cert-verify: true
-  - name: hw
+  - name: Illinois
     type: hysteria2
     server: 108.174.50.165
     port: 33548
@@ -41,7 +41,7 @@ proxy-groups:
     proxies:
       - SanJose
       - Seattle
-      # - hw
+      - Illinois
       
 rule-providers:
   reject:
