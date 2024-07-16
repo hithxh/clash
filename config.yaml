@@ -41,7 +41,7 @@ proxy-groups:
     proxies:
       - jose
       - seattle
-      - hw
+      # - hw
       
 rule-providers:
   reject:
