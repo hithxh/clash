@@ -13,14 +13,14 @@ dns:
     - 1.1.1.1
     - 114.114.114.114
 proxies:
-  - name: jose
+  - name: SanJose
     type: hysteria2
     server: 23.95.61.114
     port: 38160
     password: 4b83b269
     sni: www.bing.com
     skip-cert-verify: true
-  - name: seattle
+  - name: Seattle
     type: hysteria2
     server: 104.168.22.226
     port: 45633
