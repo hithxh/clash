@@ -23,8 +23,8 @@ proxies:
   - name: seattle
     type: hysteria2
     server: 104.168.22.226
-    port: 15116
-    password: 1958e99e
+    port: 45633
+    password: f35fa72c
     sni: www.bing.com
     skip-cert-verify: true
   - name: hw
