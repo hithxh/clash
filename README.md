@@ -16,6 +16,5 @@
   - ios 小火箭
 
 ## 订阅地址
-  - 国外： https://raw.githubusercontent.com/hithxh/clash/main/config.yaml
   - 国内： https://gh.xxooo.cf/https://raw.githubusercontent.com/hithxh/clash/main/config.yaml
 
