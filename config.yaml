@@ -16,15 +16,15 @@ proxies:
   - name: SanJose
     type: hysteria2
     server: 23.95.61.114
-    port: 38160
-    password: 4b83b269
+    port: 56075
+    password: 119d42d9
     sni: www.bing.com
     skip-cert-verify: true
   - name: Seattle
     type: hysteria2
     server: 104.168.22.226
-    port: 45633
-    password: f35fa72c
+    port: 37832
+    password: baf74b30
     sni: www.bing.com
     skip-cert-verify: true
   - name: Illinois
