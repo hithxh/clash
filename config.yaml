@@ -16,8 +16,8 @@ proxies:
   - name: SanJose
     type: hysteria2
     server: 23.95.61.114
-    port: 5331
-    password: b35e30a2
+    port: 29165
+    password: 4ff0fc9f
     sni: www.bing.com
     skip-cert-verify: true
   - name: Seattle
