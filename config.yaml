@@ -39,7 +39,7 @@ proxy-groups:
   - name: PROXY
     type: select
     proxies:
-      - SanJose
+      # - SanJose
       - Seattle
       - Illinois
       
