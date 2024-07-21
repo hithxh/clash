@@ -141,6 +141,7 @@ rules:
   - DOMAIN-SUFFIX,github.com,PROXY
   - DOMAIN-SUFFIX,ustraveldocs.com,DIRECT
   - DOMAIN-SUFFIX,xing.com,DIRECT
+  - DOMAIN-SUFFIX,bilibili.com,DIRECT
   - DOMAIN-SUFFIX,monster.com,DIRECT
   - DOMAIN-SUFFIX,stepstone.com,DIRECT
   - DOMAIN-SUFFIX,alipan.com,DIRECT
