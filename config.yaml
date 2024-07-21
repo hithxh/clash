@@ -13,13 +13,6 @@ dns:
     - 1.1.1.1
     - 114.114.114.114
 proxies:
-  - name: SanJose
-    type: hysteria2
-    server: 23.95.61.114
-    port: 34125
-    password: bc8fe7d2
-    sni: www.bing.com
-    skip-cert-verify: true
   - name: Seattle
     type: hysteria2
     server: 104.168.22.226
@@ -39,7 +32,6 @@ proxy-groups:
   - name: PROXY
     type: select
     proxies:
-      # - SanJose
       - Seattle
       - Illinois
       
