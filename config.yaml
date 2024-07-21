@@ -30,8 +30,8 @@ proxies:
   - name: Illinois
     type: hysteria2
     server: 108.174.50.165
-    port: 33548
-    password: 5c868880
+    port: 4869
+    password: 8f67ca89
     sni: www.bing.com
     skip-cert-verify: true
 
