@@ -14,15 +14,11 @@ dns:
     - 114.114.114.114
 proxies:
   - name: SanJose
-    type: hysteria
+    type: hysteria2
     server: 23.95.61.114
-    port: 23182
-    auth_str: 22fc294c
-    alpn:
-      - h3
-    protocol: wehcat-video
-    up: 20
-    down: 100
+    port: 34125
+    password: bc8fe7d2
+    sni: www.bing.com
     skip-cert-verify: true
   - name: Seattle
     type: hysteria2
