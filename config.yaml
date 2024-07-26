@@ -12,6 +12,7 @@ dns:
     - 8.8.8.8
     - 1.1.1.1
     - 114.114.114.114
+
 proxies:
   - name: Seattle
     type: hysteria2
@@ -28,12 +29,59 @@ proxies:
     sni: www.bing.com
     skip-cert-verify: true
   - name: SanJose
-    type: hysteria2
-    server: 23.95.61.114
-    port: 29600
-    auth: 1f602d21-ab75-4d41-9993-5febeb7cd23d
-    sni: www.bing.com
+    type: hysteria2                                      
+    server: 23.95.61.114                               
+    port: 29600                                
+    password: 1f602d21-ab75-4d41-9993-5febeb7cd23d                          
+    alpn:
+      - h3
+    sni: www.bing.com                               
     skip-cert-verify: true
+    fast-open: true
+  - name: vless-reality-vision          
+    type: vless
+    server: 23.95.61.114                           
+    port: 8241                                
+    uuid: 1f602d21-ab75-4d41-9993-5febeb7cd23d   
+    network: tcp
+    udp: true
+    tls: true
+    flow: xtls-rprx-vision
+    servername: www.yahoo.com                 
+    reality-opts: 
+      public-key: -roCPCow1gvzzTUdE5eyjFA-9avFKL6cvSjbEFEELgw    
+      short-id: '21fe9154'                    
+    client-fingerprint: chrome                  
+
+  - name: vmess-ws                   
+    type: vmess
+    server: 23.95.61.114                        
+    port: 8880                                     
+    uuid: 1f602d21-ab75-4d41-9993-5febeb7cd23d       
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: false
+    network: ws
+    servername: www.bing.com                    
+    ws-opts:
+      path: "1f602d21-ab75-4d41-9993-5febeb7cd23d-vm"                             
+      headers:
+        Host: www.bing.com                     
+  - name: tuic5                         
+    server: 23.95.61.114                      
+    port: 15529                                    
+    type: tuic
+    uuid: 1f602d21-ab75-4d41-9993-5febeb7cd23d       
+    password: 1f602d21-ab75-4d41-9993-5febeb7cd23d   
+    alpn: [h3]
+    disable-sni: true
+    reduce-rtt: true
+    udp-relay-mode: native
+    congestion-controller: bbr
+    sni: www.bing.com                                
+    skip-cert-verify: true
+    
 
 proxy-groups:
   - name: PROXY
@@ -42,6 +90,9 @@ proxy-groups:
       - Seattle
       - Illinois
       - SanJose
+      - vless-reality-vision               
+      - vmess-ws
+      - tuic5
       
 rule-providers:
   reject:
