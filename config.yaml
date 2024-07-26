@@ -27,6 +27,13 @@ proxies:
     password: 8f67ca89
     sni: www.bing.com
     skip-cert-verify: true
+  - name: SanJose
+    type: hysteria2
+    server: 23.95.61.114
+    port: 29600
+    auth: 1f602d21-ab75-4d41-9993-5febeb7cd23d
+    sni: www.bing.com
+    skip-cert-verify: true
 
 proxy-groups:
   - name: PROXY
@@ -34,6 +41,7 @@ proxy-groups:
     proxies:
       - Seattle
       - Illinois
+      - SanJose
       
 rule-providers:
   reject:
