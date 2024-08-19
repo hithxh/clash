@@ -77,43 +77,7 @@
             "searchable": 1,
             "changeable": 1,
             "ext": "动作片#谍战剧playlist#沙雕穿越#中国动漫#有声穿越小说#影视解说#百家讲坛playlist#动物#风光#放松#4K#HDR#movie#喜来乐#documentary#bbc documentary"
-        },
-{key": "91md.me",
-      "name": "九一传媒",
-      "type": 1,
-      "api": "http://91md.me/api.php/provide/vod/",
-      "quickSearch": 1,
-      "searchable": 1,
-      "filterable": 1
-    },
-  {
-      "key": "玩偶弹幕版",
-      "name": "玩偶⚗️弹幕4K",
-      "type": 3,
-      "api": "csp_Wogg",
-      "jar": "./lib/dongchenok.jar",
-      "searchable": 1,
-      "filterable": 1,
-      "changeable": 1,
-      "ext": {
-        "token": "file://TV/ali_token.txt",
-        "cookie": "file://TV/quark_cookie.txt",
-        "site": "https://www.wogg.net",
-        "danmu": true
-      },
-      "timeout": 25
-    },
-    {
-      "key": "yyds",
-      "name": "夸克🏆弹幕4K",
-      "type": 3,
-      "api": "csp_Wobg",
-      "jar": "./lib/PG.jar",
-      "changeable": 1,
-      "filterable": 1,
-      "timeout": 60,
-      "ext": "./lib/wogg.json"
-    }
+        }
 ],
 "logo":"https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1716545739254/fc1b89e152cd4aa28d295107cb6c56c9.gif",
 "lives":[
