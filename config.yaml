@@ -28,29 +28,6 @@ proxies:
     password: 8f67ca89
     sni: www.bing.com
     skip-cert-verify: true
-  - name: SanJose
-    type: hysteria2                                      
-    server: 23.95.61.114                               
-    port: 29600                                
-    password: 1f602d21-ab75-4d41-9993-5febeb7cd23d                          
-    alpn:
-      - h3
-    sni: www.bing.com                               
-    skip-cert-verify: true
-    fast-open: true
-  - name: tuic5                         
-    server: 23.95.61.114                      
-    port: 15529                                    
-    type: tuic
-    uuid: 1f602d21-ab75-4d41-9993-5febeb7cd23d       
-    password: 1f602d21-ab75-4d41-9993-5febeb7cd23d   
-    alpn: [h3]
-    disable-sni: true
-    reduce-rtt: true
-    udp-relay-mode: native
-    congestion-controller: bbr
-    sni: www.bing.com                                
-    skip-cert-verify: true
   - {name: 🐉, server: visa.com, port: 2096, type: vless, uuid: 99280094-e683-476b-a3cd-0d37c3892c6f, tls: true, alpn: [h3], tfo: false, skip-cert-verify: true, servername: ts.6516789.xyz, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: ts.6516789.xyz}}}
   - {name: 🐉 2, server: visa.com.hk, port: 2096, type: vless, uuid: 99280094-e683-476b-a3cd-0d37c3892c6f, tls: true, alpn: [h3], tfo: false, skip-cert-verify: true, servername: ts.6516789.xyz, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: ts.6516789.xyz}}}
   - {name: 🇭🇰 HK, server: 47.75.101.0, port: 3443, type: vless, uuid: 99280094-e683-476b-a3cd-0d37c3892c6f, tls: true, alpn: [h3], tfo: false, skip-cert-verify: true, servername: ts.6516789.xyz, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: ts.6516789.xyz}}}
@@ -95,8 +72,6 @@ proxy-groups:
     proxies:
       - Seattle
       - Illinois
-      - SanJose
-      - tuic5
       - 🐉
       - 🐉 2
       - 🇭🇰 HK
