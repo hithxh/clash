@@ -37,19 +37,19 @@ proxies:
   - {name: 🇺🇸 US 1, server: 99.83.209.185, port: 443, type: vless, uuid: 99280094-e683-476b-a3cd-0d37c3892c6f, tls: true, alpn: [h3], tfo: false, skip-cert-verify: true, servername: ts.6516789.xyz, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: ts.6516789.xyz}}}
   - {name: 🇺🇸 US 2, server: 75.2.32.4, port: 443, type: vless, uuid: 99280094-e683-476b-a3cd-0d37c3892c6f, tls: true, alpn: [h3], tfo: false, skip-cert-verify: true, servername: ts.6516789.xyz, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: ts.6516789.xyz}}}
 proxy-groups:
-  # - name: PROXY
-  #   type: select
-  #   proxies:
-  - Seattle
-  - Illinois
-  - 🇭🇰 HK 1
-  - 🇭🇰 HK 2
-  - 🇭🇰 HK 3
-  - 🇭🇰 HK 4
-  - 🇭🇰 HK 5
-  - 🇭🇰 HK 6
-  - 🇺🇸 US 1
-  - 🇺🇸 US 2
+  - name: PROXY
+    type: select
+    proxies:
+      - Seattle
+      - Illinois
+      - 🇭🇰 HK 1
+      - 🇭🇰 HK 2
+      - 🇭🇰 HK 3
+      - 🇭🇰 HK 4
+      - 🇭🇰 HK 5
+      - 🇭🇰 HK 6
+      - 🇺🇸 US 1
+      - 🇺🇸 US 2
 rule-providers:
   reject:
     type: http
