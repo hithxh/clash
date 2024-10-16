@@ -36,6 +36,10 @@ proxies:
   - {name: 🇭🇰 HK 6, server: 183.178.22.246, port: 11417, type: vless, uuid: 99280094-e683-476b-a3cd-0d37c3892c6f, tls: true, alpn: [h3], tfo: false, skip-cert-verify: true, servername: ts.6516789.xyz, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: ts.6516789.xyz}}}
   - {name: 🇺🇸 US 1, server: 99.83.209.185, port: 443, type: vless, uuid: 99280094-e683-476b-a3cd-0d37c3892c6f, tls: true, alpn: [h3], tfo: false, skip-cert-verify: true, servername: ts.6516789.xyz, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: ts.6516789.xyz}}}
   - {name: 🇺🇸 US 2, server: 75.2.32.4, port: 443, type: vless, uuid: 99280094-e683-476b-a3cd-0d37c3892c6f, tls: true, alpn: [h3], tfo: false, skip-cert-verify: true, servername: ts.6516789.xyz, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: ts.6516789.xyz}}}
+  - {name: 🇰🇷 KR 1, server: shouer1.209966.xyz, port: 41034, type: vmess, uuid: ba30c3b8-2a63-4fdd-aed5-b759e146ab85, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇸🇬 SG 1, server: sg.polarbear.works, port: 24299, type: vless, uuid: f107f5a4-df7a-4b77-ff14-d20062657585, tls: true, tfo: false, flow: xtls-rprx-vision, reality-opts: {public-key: Z3ZGnAOdKkzJ07gR_7_0k9_iTTFP6paDOrqx1rN2LU4}, servername: icloud.cdn-apple.com, client-fingerprint: chrome, network: tcp}
+  - {name: 🇸🇬 SG 2, server: sg.polarbear.works, port: 41828, type: vless, uuid: c2389b8b-75e2-47e2-8bb7-e09f44a76096, tls: true, tfo: false, flow: xtls-rprx-vision, reality-opts: {public-key: W9BjX6YmCIVsjhKMlz233Yoe0xcf0SVHfvPKqbf3vCg}, servername: content.cdp.bethesda.net, client-fingerprint: chrome, network: tcp}
+    
 proxy-groups:
   - name: PROXY
     type: select
@@ -50,6 +54,10 @@ proxy-groups:
       - 🇭🇰 HK 6
       - 🇺🇸 US 1
       - 🇺🇸 US 2
+      - 🇰🇷 KR 1
+      - 🇸🇬 SG 1
+      - 🇸🇬 SG 2
+      
 rule-providers:
   reject:
     type: http
