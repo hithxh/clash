@@ -36,9 +36,20 @@ proxies:
   - {name: 🇭🇰 HK 6, server: 183.178.22.246, port: 11417, type: vless, uuid: 99280094-e683-476b-a3cd-0d37c3892c6f, tls: true, alpn: [h3], tfo: false, skip-cert-verify: true, servername: ts.6516789.xyz, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: ts.6516789.xyz}}}
   - {name: 🇺🇸 US 1, server: 99.83.209.185, port: 443, type: vless, uuid: 99280094-e683-476b-a3cd-0d37c3892c6f, tls: true, alpn: [h3], tfo: false, skip-cert-verify: true, servername: ts.6516789.xyz, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: ts.6516789.xyz}}}
   - {name: 🇺🇸 US 2, server: 75.2.32.4, port: 443, type: vless, uuid: 99280094-e683-476b-a3cd-0d37c3892c6f, tls: true, alpn: [h3], tfo: false, skip-cert-verify: true, servername: ts.6516789.xyz, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: ts.6516789.xyz}}}
-  - {name: 🇰🇷 KR 1, server: shouer1.209966.xyz, port: 41034, type: vmess, uuid: ba30c3b8-2a63-4fdd-aed5-b759e146ab85, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇸🇬 SG 1, server: sg.polarbear.works, port: 24299, type: vless, uuid: f107f5a4-df7a-4b77-ff14-d20062657585, tls: true, tfo: false, flow: xtls-rprx-vision, reality-opts: {public-key: Z3ZGnAOdKkzJ07gR_7_0k9_iTTFP6paDOrqx1rN2LU4}, servername: icloud.cdn-apple.com, client-fingerprint: chrome, network: tcp}
-  - {name: 🇸🇬 SG 2, server: sg.polarbear.works, port: 41828, type: vless, uuid: c2389b8b-75e2-47e2-8bb7-e09f44a76096, tls: true, tfo: false, flow: xtls-rprx-vision, reality-opts: {public-key: W9BjX6YmCIVsjhKMlz233Yoe0xcf0SVHfvPKqbf3vCg}, servername: content.cdp.bethesda.net, client-fingerprint: chrome, network: tcp}
+  - {name: "🇸🇬 Merlion, 新加坡, Singapore", server: 13.215.205.186, port: 443, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: amazonskr05, tfo: false}
+  - {name: "🇷🇺 Vodka, 俄罗斯", server: 120.195.6.233, port: 23278, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: UomcSobsfu2SwwCn, tfo: false}
+  - {name: "🇰🇷 Olaf, 韩国, Incheon", server: 47.129.244.12, port: 443, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: amazonskr05, tfo: false}
+  - {name: "🇺🇸 Buzz, 美国, Houston", server: 52.10.33.211, port: 443, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: amazonskr05, tfo: false}
+  - {name: "🇭🇰 Dim Sum, 香港, New Territories", server: 13.250.3.43, port: 443, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: amazonskr05, tfo: false}
+  - {name: "🇰🇷 Ghibli, 韩国", server: 120.195.6.233, port: 23382, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: f52SZksXnGNfc72Q, tfo: false}
+  - {name: "🇨🇦 Moana, 加拿大, Vancouver", server: 34.209.103.254, port: 443, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: amazonskr05, tfo: false}
+  - {name: "🇩🇪 Bavaria, 德国", server: 120.195.6.233, port: 20934, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: bbO8KazkNBUGb7HP, tfo: false}
+  - {name: "🇯🇵 Sakura, 日本", server: 120.195.6.233, port: 22803, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: JpTYrOJnIhNMXqli, tfo: false}
+  - {name: "🇨🇦 Maple, 加拿大", server: 120.195.6.233, port: 22448, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: JN8psKoncqaqS4ul, tfo: false}
+  - {name: "🇭🇰 Olaf, 中国香港（线路1）", server: 120.195.6.233, port: 21419, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: ftCmijEJNQM9eZGx, tfo: false}
+  - {name: "🇬🇧 Big Ben, 英国", server: 120.195.6.233, port: 22134, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: PzT7es7Sr2ronZO2, tfo: false}
+  - {name: "🇺🇸 Hollywood, 美国", server: 120.195.6.233, port: 23961, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: 2LF2EhWMqnlf0kRi, tfo: false}
+  - {name: "🇸🇬 SG 1", server: 120.195.6.233, port: 20705, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: 75ly0yJ90LP5Ural, tfo: false}
     
 proxy-groups:
   - name: PROXY
@@ -46,6 +57,7 @@ proxy-groups:
     proxies:
       - Seattle
       - Illinois
+      - 🇸🇬 SG 1
       - 🇭🇰 HK 1
       - 🇭🇰 HK 2
       - 🇭🇰 HK 3
@@ -54,9 +66,20 @@ proxy-groups:
       - 🇭🇰 HK 6
       - 🇺🇸 US 1
       - 🇺🇸 US 2
-      - 🇰🇷 KR 1
-      - 🇸🇬 SG 1
-      - 🇸🇬 SG 2
+      - 🇸🇬 Merlion, 新加坡, Singapore
+      - 🇷🇺 Vodka, 俄罗斯
+      - 🇰🇷 Olaf, 韩国, Incheon
+      - 🇺🇸 Buzz, 美国, Houston
+      - 🇭🇰 Dim Sum, 香港, New Territories
+      - 🇰🇷 Ghibli, 韩国
+      - 🇨🇦 Moana, 加拿大, Vancouver
+      - 🇩🇪 Bavaria, 德国
+      - 🇯🇵 Sakura, 日本
+      - 🇨🇦 Maple, 加拿大
+      - 🇭🇰 Olaf, 中国香港（线路1）
+      - 🇬🇧 Big Ben, 英国
+      - 🇺🇸 Hollywood, 美国
+
       
 rule-providers:
   reject:
@@ -161,7 +184,6 @@ rules:
   - DOMAIN,clash.razord.top,DIRECT
   - DOMAIN,yacd.haishan.me,DIRECT
   - DOMAIN,services.googleapis.cn,PROXY
-  - DOMAIN-SUFFIX,chinamobile.com,DIRECT
   - DOMAIN-SUFFIX,github.com,PROXY
   - DOMAIN-SUFFIX,renruihr.com,DIRECT
   - DOMAIN-SUFFIX,ustraveldocs.com,DIRECT
