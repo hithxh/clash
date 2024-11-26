@@ -28,7 +28,7 @@ proxies:
     password: 8f67ca89
     sni: www.bing.com
     skip-cert-verify: true
-  - {name: 🇯🇵 Sakura, 日本, server: 120.195.6.233, port: 22803, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: JpTYrOJnIhNMXqli, tfo: false}
+  - {name: 🇯🇵, server: 120.195.6.233, port: 22803, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: JpTYrOJnIhNMXqli, tfo: false}
   - {name: 🇭🇰 HK 1, server: visa.com, port: 2096, type: vless, uuid: 99280094-e683-476b-a3cd-0d37c3892c6f, tls: true, alpn: [h3], tfo: false, skip-cert-verify: true, servername: ts.6516789.xyz, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: ts.6516789.xyz}}}
   - {name: 🇭🇰 HK 2, server: visa.com.hk, port: 2096, type: vless, uuid: 99280094-e683-476b-a3cd-0d37c3892c6f, tls: true, alpn: [h3], tfo: false, skip-cert-verify: true, servername: ts.6516789.xyz, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: ts.6516789.xyz}}}
   - {name: 🇭🇰 HK 3, server: 58.176.95.46, port: 443, type: vless, uuid: 99280094-e683-476b-a3cd-0d37c3892c6f, tls: true, alpn: [h3], tfo: false, skip-cert-verify: true, servername: ts.6516789.xyz, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: ts.6516789.xyz}}}
@@ -52,7 +52,7 @@ proxy-groups:
       - Seattle
       - Illinois
       - 🇸🇬 新加坡-HY-001-1D
-      - 🇯🇵 Sakura, 日本
+      - 🇯🇵
       - 🇭🇰 HK 1
       - 🇭🇰 HK 2
       - 🇭🇰 HK 3
