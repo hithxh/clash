@@ -28,44 +28,46 @@ proxies:
     password: 8f67ca89
     sni: www.bing.com
     skip-cert-verify: true
+  - {name: 🇯🇵 Sakura, 日本, server: 120.195.6.233, port: 22803, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: JpTYrOJnIhNMXqli, tfo: false}
   - {name: 🇭🇰 HK 1, server: visa.com, port: 2096, type: vless, uuid: 99280094-e683-476b-a3cd-0d37c3892c6f, tls: true, alpn: [h3], tfo: false, skip-cert-verify: true, servername: ts.6516789.xyz, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: ts.6516789.xyz}}}
   - {name: 🇭🇰 HK 2, server: visa.com.hk, port: 2096, type: vless, uuid: 99280094-e683-476b-a3cd-0d37c3892c6f, tls: true, alpn: [h3], tfo: false, skip-cert-verify: true, servername: ts.6516789.xyz, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: ts.6516789.xyz}}}
   - {name: 🇭🇰 HK 3, server: 58.176.95.46, port: 443, type: vless, uuid: 99280094-e683-476b-a3cd-0d37c3892c6f, tls: true, alpn: [h3], tfo: false, skip-cert-verify: true, servername: ts.6516789.xyz, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: ts.6516789.xyz}}}
   - {name: 🇭🇰 HK 4, server: 58.176.229.127, port: 35002, type: vless, uuid: 99280094-e683-476b-a3cd-0d37c3892c6f, tls: true, alpn: [h3], tfo: false, skip-cert-verify: true, servername: ts.6516789.xyz, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: ts.6516789.xyz}}}
-  - {name: 🇭🇰 HK 5, server: 183.178.22.246, port: 36669, type: vless, uuid: 99280094-e683-476b-a3cd-0d37c3892c6f, tls: true, alpn: [h3], tfo: false, skip-cert-verify: true, servername: ts.6516789.xyz, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: ts.6516789.xyz}}}
-  - {name: 🇭🇰 HK 6, server: 183.178.22.246, port: 11417, type: vless, uuid: 99280094-e683-476b-a3cd-0d37c3892c6f, tls: true, alpn: [h3], tfo: false, skip-cert-verify: true, servername: ts.6516789.xyz, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: ts.6516789.xyz}}}
-  - {name: 🇺🇸 US 1, server: 99.83.209.185, port: 443, type: vless, uuid: 99280094-e683-476b-a3cd-0d37c3892c6f, tls: true, alpn: [h3], tfo: false, skip-cert-verify: true, servername: ts.6516789.xyz, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: ts.6516789.xyz}}}
-  - {name: 🇺🇸 US 2, server: 75.2.32.4, port: 443, type: vless, uuid: 99280094-e683-476b-a3cd-0d37c3892c6f, tls: true, alpn: [h3], tfo: false, skip-cert-verify: true, servername: ts.6516789.xyz, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: ts.6516789.xyz}}}
-  - {name: "🇯🇵 Sakura, 日本", server: 120.195.6.233, port: 22803, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: JpTYrOJnIhNMXqli, tfo: false}
-  - {name: "🇩🇪 德国 1", server: 2.59.134.248, port: 2003, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, servername: vless.ifx.us.kg, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: vless.ifx.us.kg}}, udp: true}
-  - {name: "🇩🇪 德国 2", server: 91.107.241.32, port: 6666, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, servername: vless.ifx.us.kg, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: vless.ifx.us.kg}}, udp: true}
-  - {name: "🇫🇷 法国 1", server: 185.22.155.139, port: 587, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, servername: vless.ifx.us.kg, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: vless.ifx.us.kg}}, udp: true}
-  - {name: "🇫🇷 法国 2", server: 179.43.144.10, port: 8000, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, servername: vless.ifx.us.kg, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: vless.ifx.us.kg}}, udp: true}
-  - {name: "🇳🇱 荷兰", server: 104.21.69.44, port: 8443, type: vless, uuid: 17fafaf9-7402-40eb-87ae-a75944c84c52, tls: true, servername: ggho.pages.dev., client-fingerprint: chrome, network: ws, ws-opts: {path: "/Telegram-@V2ray_Alpha/?ed=2048fp=randomized", headers: {Host: ggho.pages.dev.}}}
-  - {name: "🇺🇸 US 3", server: 104.19.48.236, port: 80, type: vless, uuid: 5df7962e-f9fe-41e6-ab49-ed96ccb856a7, tls: false, servername: v2ra1.ecrgpk.workers.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /@VPNHTTPInjectorfreefp=chrome, headers: {Host: v2ra1.ecrgpk.workers.dev}}}
-  - {name: "🇬🇧 英国 1", server: okgg.top, port: 443, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, servername: vless.ifx.us.kg, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: vless.ifx.us.kg}}, udp: true}
+  - {name: 🇭🇰 中国-香港-002-1B, server: 45.144.174.75, port: 8080, type: vless, uuid: fc034de4-07a1-4a2f-92a4-d3d380b0db39, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇭🇰 中国-香港-003-1F, server: 212.192.13.179, port: 4035, type: vless, uuid: cf1b9121-e88b-4be4-8e78-7d872c00bd45, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇸🇬 新加坡-HY-001-1D, server: 103.136.68.253, port: 80, type: hysteria2, password: d76f0b07-a617-47f2-aadf-0adc1509923c, auth: d76f0b07-a617-47f2-aadf-0adc1509923c, up: 50, down: 50, skip-cert-verify: true, obfs: salamander, obfs-password: OWU2MmNkZDU3YjUwMTZkNQ==, udp: true}
+  - {name: 🇭🇰 中国-香港-002-1E, server: 45.144.174.75, port: 8080, type: vless, uuid: cef51eff-b55c-46ff-acb8-02e6a3406ced, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇸🇬 新加坡NO.2-1B, server: xdd.dashuai.cyou, port: 45055, type: vmess, uuid: 4e2d2497-c5cf-4fb0-a81a-b7756e300b9f, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇭🇰 中国-香港-HY-002-1D, server: 45.144.174.75, port: 3348, type: hysteria2, password: d76f0b07-a617-47f2-aadf-0adc1509923c, auth: d76f0b07-a617-47f2-aadf-0adc1509923c, up: 50, down: 50, skip-cert-verify: true, obfs: salamander, obfs-password: Y2JhZTU3ZjE4ZTI0MzRmMQ==, udp: true}
+  - {name: 🇷🇺 俄罗斯-莫斯科-HY-001-1E, server: 46.17.44.62, port: 80, type: hysteria2, password: cef51eff-b55c-46ff-acb8-02e6a3406ced, auth: cef51eff-b55c-46ff-acb8-02e6a3406ced, up: 50, down: 50, skip-cert-verify: true, obfs: salamander, obfs-password: MGJiYThkMjgwNDE1Y2FkMg==, udp: true}
+  - {name: 🇩🇪 欧洲-法兰克福-1-1A, server: oracle-arm-frankfurt1.lanmaoyun.icu, port: 30001, type: hysteria2, password: e48ac987-4812-4ffb-bbea-5ef1a55f427c, auth: e48ac987-4812-4ffb-bbea-5ef1a55f427c, sni: frankfurt1.nodes.lanmaoyun.icu, up: 100, down: 1000, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 新加坡 01 移动推荐-1C, server: sgv2test.566678.xyz, port: 18443, type: vless, uuid: c6eb7e76-24b1-4331-a237-c05a5314225d, tls: true, reality-opts: {public-key: dTE8QcX1B_9HRG5Uae47q0HtjhVvePvfPMxvfLyVUUA, short-id: "32ff656d" }, servername: www.tesla.com, client-fingerprint: firefox, network: tcp, udp: true}
+  - {name: 🇹🇼 台湾 IEPL专线NO3-1A, server: i.needss.top, port: 20016, type: vmess, uuid: 26ae7a34-7ebc-484f-8ba4-eb1f33c8206a, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇸🇬 新加坡 IEPL专线NO1-1B, server: i.needss.top, port: 20015, type: vmess, uuid: c23956f8-37a9-4201-ba0b-509ab92fe143, alterId: 0, cipher: auto, tls: false, udp: true}
+ 
 proxy-groups:
   - name: PROXY
     type: select
     proxies:
       - Seattle
       - Illinois
+      - 🇸🇬 新加坡-HY-001-1D
       - 🇯🇵 Sakura, 日本
       - 🇭🇰 HK 1
       - 🇭🇰 HK 2
       - 🇭🇰 HK 3
       - 🇭🇰 HK 4
-      - 🇭🇰 HK 5
-      - 🇭🇰 HK 6
-      - 🇺🇸 US 1
-      - 🇺🇸 US 2
-      - 🇺🇸 US 3
-      - 🇩🇪 德国 1
-      - 🇩🇪 德国 2
-      - 🇫🇷 法国 1
-      - 🇫🇷 法国 2
-      - 🇳🇱 荷兰
-      - 🇬🇧 英国 1
+      - 🇭🇰 中国-香港-002-1B
+      - 🇭🇰 中国-香港-003-1F
+      - 🇭🇰 中国-香港-002-1E
+      - 🇸🇬 新加坡NO.2-1B
+      - 🇭🇰 中国-香港-HY-002-1D
+      - 🇷🇺 俄罗斯-莫斯科-HY-001-1E
+      - 🇩🇪 欧洲-法兰克福-1-1A
+      - 🇸🇬 新加坡 01 移动推荐-1C
+      - 🇹🇼 台湾 IEPL专线NO3-1A
+      - 🇸🇬 新加坡 IEPL专线NO1-1B
+
       
       
 rule-providers:
