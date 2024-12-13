@@ -1231,25 +1231,9 @@ proxies:
     password: Ea8WGR
     udp: true
   -
-    name: '海外连接 日本'
-    type: ss
-    server: 103.152.227.147
-    port: 50743
-    cipher: rc4-md5
-    password: Ea8WGR
-    udp: true
-  -
     name: 澳门
     type: ss
     server: mo01.fjk.wtf
-    port: 50743
-    cipher: rc4-md5
-    password: Ea8WGR
-    udp: true
-  -
-    name: 纯IPV6接入
-    type: ss
-    server: '2001:e42:102:1523:160:16:95:158'
     port: 50743
     cipher: rc4-md5
     password: Ea8WGR
@@ -1330,14 +1314,6 @@ proxies:
     name: '美国高级 IEPL 中继 D05'
     type: ss
     server: us05.ktp.wtf
-    port: 50743
-    cipher: rc4-md5
-    password: Ea8WGR
-    udp: true
-  -
-    name: 阿根廷
-    type: ss
-    server: agt01.fjk.wtf
     port: 50743
     cipher: rc4-md5
     password: Ea8WGR
@@ -1916,9 +1892,7 @@ proxy-groups:
       - '日本 まつやまし auひかり ホーム1ギガ D 09'
       - '日本 まつやまし auひかり ホーム1ギガ D 10'
       - 朝鲜平壤
-      - '海外连接 日本'
       - 澳门
-      - 纯IPV6接入
       - '美国实验性 IEPL 中继 D01'
       - '美国实验性 IEPL 中继 D02'
       - '美国实验性 IEPL 中继 D03'
@@ -1929,7 +1903,6 @@ proxy-groups:
       - '美国高级 IEPL 中继 D03'
       - '美国高级 IEPL 中继 D04'
       - '美国高级 IEPL 中继 D05'
-      - 阿根廷
       - '韩国 전라북도 전주시 商宽 D 01'
       - '韩国 전라북도 전주시 商宽 D 02'
       - '韩国 전라북도 전주시 商宽 D 03'
@@ -2134,9 +2107,7 @@ proxy-groups:
       - '日本 まつやまし auひかり ホーム1ギガ D 09'
       - '日本 まつやまし auひかり ホーム1ギガ D 10'
       - 朝鲜平壤
-      - '海外连接 日本'
       - 澳门
-      - 纯IPV6接入
       - '美国实验性 IEPL 中继 D01'
       - '美国实验性 IEPL 中继 D02'
       - '美国实验性 IEPL 中继 D03'
@@ -2147,7 +2118,6 @@ proxy-groups:
       - '美国高级 IEPL 中继 D03'
       - '美国高级 IEPL 中继 D04'
       - '美国高级 IEPL 中继 D05'
-      - 阿根廷
       - '韩国 전라북도 전주시 商宽 D 01'
       - '韩国 전라북도 전주시 商宽 D 02'
       - '韩国 전라북도 전주시 商宽 D 03'
