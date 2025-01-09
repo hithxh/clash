@@ -1,30 +1,18 @@
 mixed-port: 7890
-allow-lan: true
-bind-address: '*'
+external-controller: 127.0.0.1:9090
+allow-lan: false
 mode: rule
-log-level: info
-external-controller: 0.0.0.0:9090
+log-level: debug
+ipv6: true
 dns:
   enable: true
-  ipv6: false
-  default-nameserver:
-    - 223.5.5.5
-    - 119.29.29.29
-  fake-ip-range: 198.18.0.1/16
-  use-hosts: true
+  listen: 0.0.0.0:53
+  enhanced-mode: fake-ip
   nameserver:
-    - https://doh.pub/dns-query
-    - https://dns.alidns.com/dns-query
-  fallback:
-    - https://doh.dns.sb/dns-query
-    - https://1.1.1.1/dns-query
-    - https://8.8.8.8/dns-query
-    - tls://8.8.4.4:853
-  fallback-filter:
-    geoip: true
-    ipcidr:
-      - 240.0.0.0/4
-      - 0.0.0.0/32
+    - 8.8.8.8
+    - 1.1.1.1
+    - 114.114.114.114
+
 proxies:
   - name: Seattle
     type: hysteria2
@@ -40,51 +28,438 @@ proxies:
     password: 8f67ca89
     sni: www.bing.com
     skip-cert-verify: true
-  - {name: 🇭🇰 HK 1, server: visa.com, port: 2096, type: vless, uuid: 99280094-e683-476b-a3cd-0d37c3892c6f, tls: true, alpn: [h3], tfo: false, skip-cert-verify: true, servername: ts.6516789.xyz, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: ts.6516789.xyz}}}
-  - {name: 🇭🇰 HK 2, server: visa.com.hk, port: 2096, type: vless, uuid: 99280094-e683-476b-a3cd-0d37c3892c6f, tls: true, alpn: [h3], tfo: false, skip-cert-verify: true, servername: ts.6516789.xyz, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: ts.6516789.xyz}}}
-  - {name: 🇭🇰 HK 3, server: 58.176.95.46, port: 443, type: vless, uuid: 99280094-e683-476b-a3cd-0d37c3892c6f, tls: true, alpn: [h3], tfo: false, skip-cert-verify: true, servername: ts.6516789.xyz, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: ts.6516789.xyz}}}
-  - {name: 🇭🇰 HK 4, server: 58.176.229.127, port: 35002, type: vless, uuid: 99280094-e683-476b-a3cd-0d37c3892c6f, tls: true, alpn: [h3], tfo: false, skip-cert-verify: true, servername: ts.6516789.xyz, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: ts.6516789.xyz}}}
+  - name: Japan 02 | ws
+    server: 56e4e417-d752-7f4e-9441-f8ff3fa01faf.oneplus.pub
+    port: 80
+    type: vmess
+    uuid: 21c90669-193d-49d3-8e37-f5c1462eb134
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: tms.dingtalk.com
+    udp: true
+  - name: Taiwan 01 | ws
+    server: 7cc02ab9-3478-1733-ea94-2b45d8e115a0.bugtik.ltd
+    port: 80
+    type: vmess
+    uuid: 21c90669-193d-49d3-8e37-f5c1462eb134
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: tms.dingtalk.com
+    udp: true
+  - name: Taiwan 02 | ws
+    server: 207c13fb-83b6-2021-766b-6c95e56a4a33.bugtik.ltd
+    port: 80
+    type: vmess
+    uuid: 21c90669-193d-49d3-8e37-f5c1462eb134
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: tms.dingtalk.com
+    udp: true
+  - name: Singapore 02 | ws
+    server: 8095978a-4cf8-3668-bdf2-4bf7bd179086.oneplus.pub
+    port: 80
+    type: vmess
+    uuid: 21c90669-193d-49d3-8e37-f5c1462eb134
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: tms.dingtalk.com
+    udp: true
+  - name: USA Phoenix 01-0.1x-hy2
+    server: 163.123.192.149
+    port: 35000
+    type: hysteria2
+    password: 5467fe26-87fd-459c-95b8-2e8da008b71d
+    auth: 5467fe26-87fd-459c-95b8-2e8da008b71d
+    sni: apps.apple.com
+    skip-cert-verify: true
+    udp: true
+  - name: USA Phoenix 02-0.1x-hy2
+    server: 163.123.192.62
+    port: 35000
+    type: hysteria2
+    password: 5467fe26-87fd-459c-95b8-2e8da008b71d
+    auth: 5467fe26-87fd-459c-95b8-2e8da008b71d
+    sni: apps.apple.com
+    skip-cert-verify: true
+    udp: true
+  - name: USA Phoenix 03-0.1x-hy2
+    server: 163.123.192.151
+    port: 35000
+    type: hysteria2
+    password: 5467fe26-87fd-459c-95b8-2e8da008b71d
+    auth: 5467fe26-87fd-459c-95b8-2e8da008b71d
+    sni: music.apple.com
+    skip-cert-verify: true
+    udp: true
+  - name: USA Phoenix 04-0.1x-hy2
+    server: 163.123.192.152
+    port: 35000
+    type: hysteria2
+    password: 5467fe26-87fd-459c-95b8-2e8da008b71d
+    auth: 5467fe26-87fd-459c-95b8-2e8da008b71d
+    sni: music.apple.com
+    skip-cert-verify: true
+    udp: true
+  - name: Korea-5x | 高速专线-hy2
+    server: 193.122.114.172
+    port: 35000
+    type: hysteria2
+    password: 5467fe26-87fd-459c-95b8-2e8da008b71d
+    auth: 5467fe26-87fd-459c-95b8-2e8da008b71d
+    sni: api.push.apple.com
+    skip-cert-verify: true
+    udp: true
+  - name: Korea2-5x | 高速专线-hy2
+    server: 152.70.234.12
+    port: 35000
+    type: hysteria2
+    password: 5467fe26-87fd-459c-95b8-2e8da008b71d
+    auth: 5467fe26-87fd-459c-95b8-2e8da008b71d
+    sni: api.push.apple.com
+    skip-cert-verify: true
+    udp: true
+  - name: Korea7-2x | 高速专线-hy2
+    server: 152.69.225.196
+    port: 35000
+    type: hysteria2
+    password: 5467fe26-87fd-459c-95b8-2e8da008b71d
+    auth: 5467fe26-87fd-459c-95b8-2e8da008b71d
+    sni: www.apple.com
+    skip-cert-verify: true
+    udp: true
+  - name: Korea8-2x | 高速专线-hy2
+    server: 146.56.100.103
+    port: 35000
+    type: hysteria2
+    password: 5467fe26-87fd-459c-95b8-2e8da008b71d
+    auth: 5467fe26-87fd-459c-95b8-2e8da008b71d
+    sni: www.apple.com
+    skip-cert-verify: true
+    udp: true
+  - name: USA Phoenix | 高速专线-hy2
+    server: 129.146.95.165
+    port: 35000
+    type: hysteria2
+    password: 5467fe26-87fd-459c-95b8-2e8da008b71d
+    auth: 5467fe26-87fd-459c-95b8-2e8da008b71d
+    sni: www.apple.com
+    skip-cert-verify: true
+    udp: true
+  - name: Singapore | 高速专线-hy2
+    server: 152.69.220.212
+    port: 35000
+    type: hysteria2
+    password: 5467fe26-87fd-459c-95b8-2e8da008b71d
+    auth: 5467fe26-87fd-459c-95b8-2e8da008b71d
+    sni: api.push.apple.com
+    skip-cert-verify: true
+    udp: true
+  - name: Singapore2 | 高速专线-hy2
+    server: 158.178.236.104
+    port: 35000
+    type: hysteria2
+    password: 5467fe26-87fd-459c-95b8-2e8da008b71d
+    auth: 5467fe26-87fd-459c-95b8-2e8da008b71d
+    sni: api.push.apple.com
+    skip-cert-verify: true
+    udp: true
+  - name: Korea2-3x | 联通/移动/电信推荐
+    server: 146.56.39.255
+    port: 443
+    type: vless
+    uuid: 5467fe26-87fd-459c-95b8-2e8da008b71d
+    tls: true
+    tfo: false
+    flow: xtls-rprx-vision
+    servername: dcpqkr.hnkkt.com
+    client-fingerprint: chrome
+    network: tcp
+    udp: true
+  - name: Singapore2
+    server: 213.35.119.223
+    port: 443
+    type: vless
+    uuid: 5467fe26-87fd-459c-95b8-2e8da008b71d
+    tls: true
+    tfo: false
+    flow: xtls-rprx-vision
+    servername: dcpqsg.hnkkt.com
+    client-fingerprint: chrome
+    network: tcp
+    udp: true
+  - name: Japan Tokyo
+    server: 131.186.35.15
+    port: 443
+    type: vless
+    uuid: 5467fe26-87fd-459c-95b8-2e8da008b71d
+    tls: true
+    tfo: false
+    flow: xtls-rprx-vision
+    servername: dcpqjp.hnkkt.com
+    client-fingerprint: chrome
+    network: tcp
+    udp: true
+  - name: Japan Tokyo2
+    server: 132.145.123.231
+    port: 443
+    type: vless
+    uuid: 5467fe26-87fd-459c-95b8-2e8da008b71d
+    tls: true
+    tfo: false
+    flow: xtls-rprx-vision
+    servername: dcpqjp.hnkkt.com
+    client-fingerprint: chrome
+    network: tcp
+    udp: true
+  - name: USA Phoenix 01-0.1x
+    server: 141.193.68.91
+    port: 443
+    type: vless
+    uuid: 5467fe26-87fd-459c-95b8-2e8da008b71d
+    tls: true
+    tfo: false
+    flow: xtls-rprx-vision
+    servername: dcpqus01.hnkkt.com
+    client-fingerprint: chrome
+    network: tcp
+    udp: true
+  - name: Hong Kong HKT1 | 电信/移动/联通推荐
+    server: 957e32be476a.78ab92.98f0fa.a458.h1.108f4143-d0af-4e42-85a0-b13448ab5917.138503301e7d.yydjc.top
+    port: 443
+    type: vless
+    uuid: 5467fe26-87fd-459c-95b8-2e8da008b71d
+    tls: true
+    tfo: false
+    flow: xtls-rprx-vision
+    servername: download.globals-download.com
+    client-fingerprint: chrome
+    network: tcp
+    udp: true
+  - name: Hong Kong HKT2 | 电信/移动/联通推荐
+    server: 957e32be476a.78ab92.98f0fa.a458.h2.108f4143-d0af-4e42-85a0-b13448ab5917.138503301e7d.yydjc.top
+    port: 443
+    type: vless
+    uuid: 5467fe26-87fd-459c-95b8-2e8da008b71d
+    tls: true
+    tfo: false
+    flow: xtls-rprx-vision
+    servername: download.globals-download.com
+    client-fingerprint: chrome
+    network: tcp
+    udp: true
+  - name: Hong Kong HKT3 | 电信/移动/联通推荐
+    server: 957e32be476a.78ab92.98f0fa.a458.h3.108f4143-d0af-4e42-85a0-b13448ab5917.138503301e7d.yydjc.top
+    port: 443
+    type: vless
+    uuid: 5467fe26-87fd-459c-95b8-2e8da008b71d
+    tls: true
+    tfo: false
+    flow: xtls-rprx-vision
+    servername: download.globals-download.com
+    client-fingerprint: chrome
+    network: tcp
+    udp: true
+  - name: Taiwan
+    server: 957e32be476a.78ab92.98f0fa.a458.t1.108f4143-d0af-4e42-85a0-b13448ab5917.138503301e7d.yydjc.top
+    port: 443
+    type: vless
+    uuid: 5467fe26-87fd-459c-95b8-2e8da008b71d
+    tls: true
+    tfo: false
+    flow: xtls-rprx-vision
+    servername: download.yydjc.top
+    client-fingerprint: chrome
+    network: tcp
+    udp: true
+  - name: Taiwan2
+    server: 957e32be476a.78ab92.98f0fa.a458.t2.108f4143-d0af-4e42-85a0-b13448ab5917.138503301e7d.yydjc.top
+    port: 443
+    type: vless
+    uuid: 5467fe26-87fd-459c-95b8-2e8da008b71d
+    tls: true
+    tfo: false
+    flow: xtls-rprx-vision
+    servername: download.yydjc.top
+    client-fingerprint: chrome
+    network: tcp
+    udp: true
+  - name: Taiwan3
+    server: 957e32be476a.78ab92.98f0fa.a458.t3.108f4143-d0af-4e42-85a0-b13448ab5917.138503301e7d.yydjc.top
+    port: 443
+    type: vless
+    uuid: 5467fe26-87fd-459c-95b8-2e8da008b71d
+    tls: true
+    tfo: false
+    flow: xtls-rprx-vision
+    servername: download.yydjc.top
+    client-fingerprint: chrome
+    network: tcp
+    udp: true
 
 proxy-groups:
-  - name: 代理选择
-    type: select
-    proxies:
-      - URL测试
-      - 手动选择
-  - name: 手动选择
+  - name: PROXY
     type: select
     proxies:
       - Seattle
       - Illinois
-      - 🇭🇰 HK 1
-      - 🇭🇰 HK 2
-      - 🇭🇰 HK 3
-      - 🇭🇰 HK 4
-     
-  - name: URL测试
-    type: url-test
-    proxies:
-      - Seattle
-      - Illinois
-      - 🇭🇰 HK 1
-      - 🇭🇰 HK 2
-      - 🇭🇰 HK 3
-      - 🇭🇰 HK 4
-      
-    url: http://www.gstatic.com/generate_204
-    interval: 300
+      - Japan 02 | ws
+      - Taiwan 01 | ws
+      - Taiwan 02 | ws
+      - Singapore 02 | ws
+      - USA Phoenix 01-0.1x-hy2
+      - USA Phoenix 02-0.1x-hy2
+      - USA Phoenix 03-0.1x-hy2
+      - USA Phoenix 04-0.1x-hy2
+      - Korea-5x | 高速专线-hy2
+      - Korea2-5x | 高速专线-hy2
+      - Korea7-2x | 高速专线-hy2
+      - Korea8-2x | 高速专线-hy2
+      - USA Phoenix | 高速专线-hy2
+      - Singapore | 高速专线-hy2
+      - Singapore2 | 高速专线-hy2
+      - Korea2-3x | 联通/移动/电信推荐
+      - Singapore2
+      - Japan Tokyo
+      - Japan Tokyo2
+      - USA Phoenix 01-0.1x
+      - Hong Kong HKT1 | 电信/移动/联通推荐
+      - Hong Kong HKT2 | 电信/移动/联通推荐
+      - Hong Kong HKT3 | 电信/移动/联通推荐
+      - Taiwan
+      - Taiwan2
+      - Taiwan3
 
+rule-providers:
+  reject:
+    type: http
+    behavior: domain
+    url: "https://ghp.ci/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/reject.txt"
+    path: ./ruleset/reject.yaml
+    interval: 86400
+  icloud:
+    type: http
+    behavior: domain
+    url: "https://ghp.ci/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/icloud.txt"
+    path: ./ruleset/icloud.yaml
+    interval: 86400
+  apple:
+    type: http
+    behavior: domain
+    url: "https://ghp.ci/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/apple.txt"
+    path: ./ruleset/apple.yaml
+    interval: 86400
+  google:
+    type: http
+    behavior: domain
+    url: "https://ghp.ci/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/google.txt"
+    path: ./ruleset/google.yaml
+    interval: 86400
+  proxy:
+    type: http
+    behavior: domain
+    url: "https://ghp.ci/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/proxy.txt"
+    path: ./ruleset/proxy.yaml
+    interval: 86400
+  direct:
+    type: http
+    behavior: domain
+    url: "https://ghp.ci/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/direct.txt"
+    path: ./ruleset/direct.yaml
+    interval: 86400
+  private:
+    type: http
+    behavior: domain
+    url: "https://ghp.ci/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/private.txt"
+    path: ./ruleset/private.yaml
+    interval: 86400
+  gfw:
+    type: http
+    behavior: domain
+    url: "https://ghp.ci/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/gfw.txt"
+    path: ./ruleset/gfw.yaml
+    interval: 86400
+  greatfire:
+    type: http
+    behavior: domain
+    url: "https://ghp.ci/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/greatfire.txt"
+    path: ./ruleset/greatfire.yaml
+    interval: 86400
+  tld-not-cn:
+    type: http
+    behavior: domain
+    url: "https://ghp.ci/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/tld-not-cn.txt"
+    path: ./ruleset/tld-not-cn.yaml
+    interval: 86400
+  telegramcidr:
+    type: http
+    behavior: ipcidr
+    url: "https://ghp.ci/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/telegramcidr.txt"
+    path: ./ruleset/telegramcidr.yaml
+    interval: 86400
+  cncidr:
+    type: http
+    behavior: ipcidr
+    url: "https://ghp.ci/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/cncidr.txt"
+    path: ./ruleset/cncidr.yaml
+    interval: 86400
+  lancidr:
+    type: http
+    behavior: ipcidr
+    url: "https://ghp.ci/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/lancidr.txt"
+    path: ./ruleset/lancidr.yaml
+    interval: 86400
+  applications:
+    type: http
+    behavior: classical
+    url: "https://ghp.ci/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/applications.txt"
+    path: ./ruleset/applications.yaml
+    interval: 86400
 
 rules:
-  - DOMAIN-SUFFIX,local,DIRECT
-  - DOMAIN-SUFFIX,linux.do,DIRECT
-  - IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
-  - IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
-  - IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
-  - IP-CIDR,127.0.0.0/8,DIRECT,no-resolve
-  - IP-CIDR6,::1/128,DIRECT,no-resolve
-  - IP-CIDR6,fc00::/7,DIRECT,no-resolve
-  - IP-CIDR6,fe80::/10,DIRECT,no-resolve
-  - IP-CIDR6,fd00::/8,DIRECT,no-resolve
+  - IP-CIDR,1.1.1.3/32,DIRECT
+  - RULE-SET,applications,DIRECT
+  - DOMAIN,clash.razord.top,DIRECT
+  - DOMAIN,yacd.haishan.me,DIRECT
+  - DOMAIN,services.googleapis.cn,PROXY
+  - DOMAIN-SUFFIX,github.com,PROXY
+  - DOMAIN-SUFFIX,renruihr.com,DIRECT
+  - DOMAIN-SUFFIX,ustraveldocs.com,DIRECT
+  - DOMAIN-SUFFIX,space-flight.org,DIRECT
+  - DOMAIN-SUFFIX,xing.com,DIRECT
+  - DOMAIN-SUFFIX,monster.com,DIRECT
+  - DOMAIN-SUFFIX,stepstone.com,DIRECT
+  - DOMAIN-SUFFIX,alipan.com,DIRECT
+  - DOMAIN-SUFFIX,blog.csdn.net,DIRECT
+  - RULE-SET,private,DIRECT
+  - RULE-SET,reject,REJECT
+  - RULE-SET,icloud,DIRECT
+  - RULE-SET,apple,DIRECT
+  - RULE-SET,google,DIRECT
+  - RULE-SET,proxy,PROXY
+  - RULE-SET,direct,DIRECT
+  - RULE-SET,lancidr,DIRECT
+  - RULE-SET,cncidr,DIRECT
+  - RULE-SET,telegramcidr,PROXY
+  - GEOIP,LAN,DIRECT
   - GEOIP,CN,DIRECT
-  - MATCH,代理选择
+  - MATCH,PROXY
