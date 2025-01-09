@@ -316,109 +316,109 @@ proxies:
     network: tcp
     udp: true
   - name: HK-WEPC
-  type: vless
-  server: 206.206.104.154
-  port: 44922
-  uuid: e54c9730-d960-47d0-95b8-da003be08a07
-  network: tcp
-  udp: true
-  tls: true
-  flow: xtls-rprx-vision
-  servername: www.yahoo.com
-  reality-opts: 
-    public-key: MfpdXtiB2_1VyfFqALsnYYhoHjxl8bmKYGC__zIUz0Y
-    short-id: 99e25cbb
-  client-fingerprint: chrome
+    type: vless
+    server: 206.206.104.154
+    port: 44922
+    uuid: e54c9730-d960-47d0-95b8-da003be08a07
+    network: tcp
+    udp: true
+    tls: true
+    flow: xtls-rprx-vision
+    servername: www.yahoo.com
+    reality-opts: 
+      public-key: MfpdXtiB2_1VyfFqALsnYYhoHjxl8bmKYGC__zIUz0Y
+      short-id: 99e25cbb
+    client-fingerprint: chrome
 
-- name: SG-原生IP
-  type: vless
-  server: 89.28.239.19
-  port: 15907
-  uuid: 4a9ccf0d-2ddb-47a9-879e-eb349ec0c90c
-  network: tcp
-  udp: true
-  tls: true
-  flow: xtls-rprx-vision
-  servername: www.yahoo.com
-  reality-opts: 
-    public-key: B3FDp-g-yUyhfFbjggyYBbnSNA6vM0KZtCmLWAXrtG4
-    short-id: d65988cc4d67
-  client-fingerprint: chrome
+  - name: SG-原生IP
+    type: vless
+    server: 89.28.239.19
+    port: 15907
+    uuid: 4a9ccf0d-2ddb-47a9-879e-eb349ec0c90c
+    network: tcp
+    udp: true
+    tls: true
+    flow: xtls-rprx-vision
+    servername: www.yahoo.com
+    reality-opts: 
+      public-key: B3FDp-g-yUyhfFbjggyYBbnSNA6vM0KZtCmLWAXrtG4
+      short-id: d65988cc4d67
+    client-fingerprint: chrome
 
-- name: HK-阿里云DTC
-  type: vless
-  server: 8.210.17.48
-  port: 38995
-  uuid: c63e1f1d-d026-4e20-8a03-21f7a581f817
-  network: tcp
-  udp: true
-  tls: true
-  flow: xtls-rprx-vision
-  servername: yahoo.com
-  reality-opts: 
-    public-key: iuLWVJ2mPpI1J2BWnPW_Cv7_0PlireWW-uOSVJT9zUY
-    short-id: 9cecd26b
-  client-fingerprint: safari
+  - name: HK-阿里云DTC
+    type: vless
+    server: 8.210.17.48
+    port: 38995
+    uuid: c63e1f1d-d026-4e20-8a03-21f7a581f817
+    network: tcp
+    udp: true
+    tls: true
+    flow: xtls-rprx-vision
+    servername: yahoo.com
+    reality-opts: 
+      public-key: iuLWVJ2mPpI1J2BWnPW_Cv7_0PlireWW-uOSVJT9zUY
+      short-id: 9cecd26b
+    client-fingerprint: safari
 
-- name: US-DNS解锁
-  type: vless
-  server: 8.218.41.40
-  port: 11525
-  uuid: 798a621b-c235-4e88-a236-a044e6eb895f
-  network: tcp
-  udp: true
-  tls: true
-  flow: xtls-rprx-vision
-  servername: www.yahoo.com
-  reality-opts: 
-    public-key: vhlIPzk67WJ5VJ3Uli-KXuMBUmeu9hlM5R-dfzNSjiQ
-    short-id: b33db7f6
-  client-fingerprint: chrome
+  - name: US-DNS解锁
+    type: vless
+    server: 8.218.41.40
+    port: 11525
+    uuid: 798a621b-c235-4e88-a236-a044e6eb895f
+    network: tcp
+    udp: true
+    tls: true
+    flow: xtls-rprx-vision
+    servername: www.yahoo.com
+    reality-opts: 
+      public-key: vhlIPzk67WJ5VJ3Uli-KXuMBUmeu9hlM5R-dfzNSjiQ
+      short-id: b33db7f6
+    client-fingerprint: chrome
 
-- name: HK-CLAW-HK
-  type: vless
-  server: 8.218.41.40
-  port: 16439
-  uuid: 8907626d-c04f-4dea-e98e-8095469e4bc6
-  network: tcp
-  udp: true
-  tls: true
-  flow: xtls-rprx-vision
-  servername: www.yahoo.com
-  reality-opts: 
-    public-key: bziSxqn35bUKL7nUAyiADGzXWDeSyxrL2UKwVyXYaCw
-    short-id: c917d9a4
-  client-fingerprint: chrome
+  - name: HK-CLAW-HK
+    type: vless
+    server: 8.218.41.40
+    port: 16439
+    uuid: 8907626d-c04f-4dea-e98e-8095469e4bc6
+    network: tcp
+    udp: true
+    tls: true
+    flow: xtls-rprx-vision
+    servername: www.yahoo.com
+    reality-opts: 
+      public-key: bziSxqn35bUKL7nUAyiADGzXWDeSyxrL2UKwVyXYaCw
+      short-id: c917d9a4
+    client-fingerprint: chrome
 
-- name: HK-原生IP
-  type: vless
-  server: 8.218.41.40
-  port: 39127
-  uuid: a83418c9-6167-49ab-e358-a4108c30943c
-  network: tcp
-  udp: true
-  tls: true
-  flow: xtls-rprx-vision
-  servername: www.yahoo.com
-  reality-opts: 
-    public-key: X3lavhGSMyz7bn37TteJmhCB7a78-MpMKB-tLxzvYi0
-    short-id: b54c67ea
-  client-fingerprint: chrome
+  - name: HK-原生IP
+    type: vless
+    server: 8.218.41.40
+    port: 39127
+    uuid: a83418c9-6167-49ab-e358-a4108c30943c
+    network: tcp
+    udp: true
+    tls: true
+    flow: xtls-rprx-vision
+    servername: www.yahoo.com
+    reality-opts: 
+      public-key: X3lavhGSMyz7bn37TteJmhCB7a78-MpMKB-tLxzvYi0
+      short-id: b54c67ea
+    client-fingerprint: chrome
 
-- name: HK-AK
-  type: vless
-  server: 120.199.90.126
-  port: 42736
-  uuid: f6db9578-dddf-4ede-84b6-caab7c99ca21
-  network: tcp
-  udp: true
-  tls: true
-  flow: xtls-rprx-vision
-  servername: www.yahoo.com
-  reality-opts: 
-    public-key: VdNPp0EBjjvI8J2ZNpWc2FN_CmLMyHvH1bpvR-TLDWM
-    short-id: c3ee
-  client-fingerprint: chrome
+  - name: HK-AK
+    type: vless
+    server: 120.199.90.126
+    port: 42736
+    uuid: f6db9578-dddf-4ede-84b6-caab7c99ca21
+    network: tcp
+    udp: true
+    tls: true
+    flow: xtls-rprx-vision
+    servername: www.yahoo.com
+    reality-opts: 
+      public-key: VdNPp0EBjjvI8J2ZNpWc2FN_CmLMyHvH1bpvR-TLDWM
+      short-id: c3ee
+    client-fingerprint: chrome
 
 proxy-groups:
   - name: PROXY
