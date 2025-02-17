@@ -573,3 +573,4 @@ rules:
   - GEOIP,LAN,DIRECT
   - GEOIP,CN,DIRECT
   - MATCH,PROXY
+  - DOMAIN-SUFFIX,linkedin.com,PROXY
