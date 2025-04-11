@@ -21,6 +21,73 @@ proxies:
     password: baf74b30
     sni: www.bing.com
     skip-cert-verify: true
+  - name: 🇯🇵日本
+    type: trojan
+    server: automq3-proxy.automq-sg.com
+    port: 443
+    network: tcp
+    tls: false
+    password: dQUWbcwECl
+    skip-cert-verify: false
+    ip-version: dual
+  - name: 🇸🇬新加坡
+    type: trojan
+    server: automq4-proxy.automq-sg.com
+    port: 443
+    network: tcp
+    tls: false
+    password: dQUWbcwECl
+    skip-cert-verify: false
+    ip-version: dual
+  - name: lapink原生ip
+    type: vless
+    server: tw-ty-line1-2-2.sudatech.store
+    port: 21082
+    uuid: e7adaa99-8363-3ec4-b849-307c99005405
+    network: tcp
+    tls: true
+    servername: learn.microsoft.com
+    flow: xtls-rprx-vision
+    skip-cert-verify: true
+    client-fingerprint: random
+    reality-opts:
+      public-key: tf7ZDGaue4C43MM0ECIfjOS-0kk7XMSqfnaSY4Er5Fc
+      short-id: 758719a6080f2767
+    ip-version: dual
+    udp: true
+  - name: RN直连节点2
+    type: hysteria2
+    server: 107.172.99.78
+    port: 43224
+    tls: false
+    password: b6ffadff-b7ad-497e-87c4-a2b315db85ea
+    alpn:
+      - h3
+    skip-cert-verify: true
+    fast-open: false
+    ip-version: dual
+  - name: HK家宽1
+    type: hysteria2
+    server: 118.141.151.139
+    port: 33443
+    tls: false
+    password: a3c43273-ab4a-4d46-9974-228c0f96a9dc
+    alpn:
+      - h3
+    skip-cert-verify: true
+    fast-open: false
+    ip-version: dual
+  - name: MY节点1
+    type: hysteria2
+    server: 23.27.240.7
+    port: 42421
+    tls: false
+    password: a999f41e-8d64-43ae-8447-c0212e064190
+    alpn:
+      - h3
+    skip-cert-verify: true
+    fast-open: false
+    ip-version: dual
   
 
 proxy-groups:
@@ -28,6 +95,12 @@ proxy-groups:
     type: select
     proxies:
       - Seattle
+      - 🇯🇵日本
+      - 🇸🇬新加坡
+      - lapink原生ip
+      - RN直连节点2
+      - HK家宽1
+      - MY节点1
 
 rule-providers:
   reject:
