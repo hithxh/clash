@@ -21,59 +21,13 @@ proxies:
     password: baf74b30
     sni: www.bing.com
     skip-cert-verify: true
-  - name: Illinois
-    type: hysteria2
-    server: 108.174.50.165
-    port: 4869
-    password: 8f67ca89
-    sni: www.bing.com
-    skip-cert-verify: true
-  - name: '🇺🇲 IPLC'
-    type: vmess
-    server: cdn.sh-us.usa.cloud.238178.xyz
-    port: 45522
-    uuid: 18dbff6e-98ea-3779-a210-718b7c5b813c
-    alterId: 0
-    cipher: auto
-    udp: true
-  - name: Japan 02 | ws
-    server: 56e4e417-d752-7f4e-9441-f8ff3fa01faf.oneplus.pub
-    port: 80
-    type: vmess
-    uuid: 21c90669-193d-49d3-8e37-f5c1462eb134
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tms.dingtalk.com
-    udp: true
-  - name: Singapore 02 | ws
-    server: 8095978a-4cf8-3668-bdf2-4bf7bd179086.oneplus.pub
-    port: 80
-    type: vmess
-    uuid: 21c90669-193d-49d3-8e37-f5c1462eb134
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tms.dingtalk.com
-    udp: true
+  
 
 proxy-groups:
   - name: PROXY
     type: select
     proxies:
       - Seattle
-      - Illinois
-      - 🇺🇲 IPLC
-      - Japan 02 | ws
-      - Singapore 02 | ws
 
 rule-providers:
   reject:
