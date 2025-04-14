@@ -21,6 +21,8 @@ proxies:
     password: 132cabb2
     sni: www.bing.com
     skip-cert-verify: true
+  - {"name":"🇸🇬新加坡01","type":"trojan","server":"automq-0413-1-proxy.automq-sg.com","port":443,"udp":true,"password":"dQUWbcwECl","skip-cert-verify":false,"network":"tcp"}
+  - {"name":"🇸🇬新加坡02","type":"trojan","server":"automq-0413-0-proxy.automq-sg.com","port":443,"udp":true,"password":"dQUWbcwECl","skip-cert-verify":false,"network":"tcp"}
   - name: lapink原生ip
     type: vless
     server: tw-ty-line1-2-2.sudatech.store
@@ -68,6 +70,8 @@ proxy-groups:
       - Seattle
       - HK家宽1
       - MY节点1
+      - 🇸🇬新加坡01
+      - 🇸🇬新加坡02
       - lapink原生ip
 
 rule-providers:
