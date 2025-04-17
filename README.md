@@ -1,5 +1,5 @@
 ## VPS
-- $10.29 /年|1GB内存|1CPU|20GB SSD|4T月流量|1Gbps带宽|1个IPv4地址|https://my.racknerd.com/cart.php?a=add&pid=810
+- https://racknerdtracker.com/go.php?id=377
 
 ## 安装hysteria2
 ```wget -N --no-check-certificate https://raw.githubusercontent.com/Misaka-blog/hysteria-install/main/hy2/hysteria.sh && bash hysteria.sh```
@@ -15,6 +15,4 @@
   - 安卓 https://github.com/MatsuriDayo/NekoBoxForAndroid/releases
   - ios 小火箭
 
-## 订阅地址
-  - 国内： https://gh.xxooo.cf/https://raw.githubusercontent.com/hithxh/clash/main/config.yaml
 
