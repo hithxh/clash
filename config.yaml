@@ -14,15 +14,42 @@ dns:
     - 114.114.114.114
 
 proxies:
-  - name: Seattle
-    type: hysteria2
-    server: 104.168.22.226
-    port: 9676
-    password: 132cabb2
-    sni: www.bing.com
-    skip-cert-verify: true
-  - {"name":"🇸🇬新加坡01","type":"trojan","server":"automq-0413-1-proxy.automq-sg.com","port":443,"udp":true,"password":"dQUWbcwECl","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"🇸🇬新加坡02","type":"trojan","server":"automq-0413-0-proxy.automq-sg.com","port":443,"udp":true,"password":"dQUWbcwECl","skip-cert-verify":false,"network":"tcp"}
+  - name: "🇨🇳 碧海☁️ 台湾-01"
+    type: trojan
+    server: aafrtpfxr.twl01i9zjfegelp.5xfsur8v62.gosdk.xyz
+    port: 27201
+    password: 262bc90c-969c-4725-b5c5-9acffbe9d127
+    sni: q08m.vgraxiw73s.hasyaf.cn
+    udp: true
+  - name: "🇭🇰 碧海☁️ 香港-01"
+    type: trojan
+    server: aafrtpfxr.hkl01i9zjfegelp.5xfsur8v62.gosdk.xyz
+    port: 27101
+    password: 262bc90c-969c-4725-b5c5-9acffbe9d127
+    sni: q08m.vgraxiw73s.hasyaf.cn
+    udp: true
+  - name: "🇭🇰 碧海☁️ 香港-02"
+    type: trojan
+    server: aafrtpfxr.hkl02i9zjfegelp.5xfsur8v62.gosdk.xyz
+    port: 27102
+    password: 262bc90c-969c-4725-b5c5-9acffbe9d127
+    sni: q08m.vgraxiw73s.hasyaf.cn
+    udp: true
+  - name: "🇭🇰 碧海☁️ 香港-03"
+    type: trojan
+    server: aafrtpfxr.hkl04i9zjfegelp.5xfsur8v62.gosdk.xyz
+    port: 27103
+    password: 262bc90c-969c-4725-b5c5-9acffbe9d127
+    sni: q08m.vgraxiw73s.hasyaf.cn
+    udp: true
+  - name: "🇭🇰 碧海☁️ 香港-04"
+    type: trojan
+    server: aafrtpfxr.hkl03i9zjfegelp.5xfsur8v62.gosdk.xyz
+    port: 10465
+    password: 262bc90c-969c-4725-b5c5-9acffbe9d127
+    sni: q08m.vgraxiw73s.hasyaf.cn
+    udp: true
+    
   - name: lapink原生ip
     type: vless
     server: tw-ty-line1-2-2.sudatech.store
@@ -50,30 +77,95 @@ proxies:
     skip-cert-verify: true
     fast-open: false
     ip-version: dual
-  - name: MY节点1
-    type: hysteria2
-    server: 23.27.240.7
-    port: 42421
-    tls: false
-    password: a999f41e-8d64-43ae-8447-c0212e064190
-    alpn:
-      - h3
-    skip-cert-verify: true
-    fast-open: false
-    ip-version: dual
-  
+  - name: "🇸🇬 碧海☁️ 新加坡-01"
+    type: trojan
+    server: aafrtpfxr.sgl01i9zjfegelp.5xfsur8v62.gosdk.xyz
+    port: 27401
+    password: 262bc90c-969c-4725-b5c5-9acffbe9d127
+    udp: true
+    sni: q08m.vgraxiw73s.hasyaf.cn
+  - name: "🇸🇬 碧海☁️ 新加坡-02"
+    type: trojan
+    server: aafrtpfxr.sgl02i9zjfegelp.5xfsur8v62.gosdk.xyz
+    port: 42881
+    password: 262bc90c-969c-4725-b5c5-9acffbe9d127
+    udp: true
+    sni: q08m.vgraxiw73s.hasyaf.cn
+  - name: "🇯🇵 碧海☁️ 日本-01"
+    type: trojan
+    server: aafrtpfxr.jpl01i9zjfegelp.5xfsur8v62.gosdk.xyz
+    port: 27001
+    password: 262bc90c-969c-4725-b5c5-9acffbe9d127
+    udp: true
+    sni: q08m.vgraxiw73s.hasyaf.cn
+  - name: "🇯🇵 碧海☁️ 日本-02"
+    type: trojan
+    server: aafrtpfxr.jpl02i9zjfegelp.5xfsur8v62.gosdk.xyz
+    port: 27002
+    password: 262bc90c-969c-4725-b5c5-9acffbe9d127
+    udp: true
+    sni: q08m.vgraxiw73s.hasyaf.cn
+  - name: "🇯🇵 碧海☁️ 日本-03"
+    type: trojan
+    server: aafrtpfxr.jpl03i9zjfegelp.5xfsur8v62.gosdk.xyz
+    port: 22271
+    password: 262bc90c-969c-4725-b5c5-9acffbe9d127
+    udp: true
+    sni: q08m.vgraxiw73s.hasyaf.cn
+  - name: "🇯🇵 碧海☁️ 日本-04"
+    type: trojan
+    server: aafrtpfxr.jpl04i9zjfegelp.5xfsur8v62.gosdk.xyz
+    port: 22269
+    password: 262bc90c-969c-4725-b5c5-9acffbe9d127
+    udp: true
+    sni: q08m.vgraxiw73s.hasyaf.cn
+  - name: "🇺🇸 碧海☁️ 美国-01"
+    type: trojan
+    server: aafrtpfxr.usl02i9zjfegelp.5xfsur8v62.gosdk.xyz
+    port: 33505
+    password: 262bc90c-969c-4725-b5c5-9acffbe9d127
+    udp: true
+    sni: q08m.vgraxiw73s.hasyaf.cn
+  - name: "🇺🇸 碧海☁️ 美国-02"
+    type: trojan
+    server: aafrtpfxr.usl03i9zjfegelp.5xfsur8v62.gosdk.xyz
+    port: 33506
+    password: 262bc90c-969c-4725-b5c5-9acffbe9d127
+    udp: true
+    sni: q08m.vgraxiw73s.hasyaf.cn
+  - name: "🇰🇷 碧海☁️ 韩国-01"
+    type: trojan
+    server: aafrtpfxr.krl01i9zjfegelp.5xfsur8v62.gosdk.xyz
+    port: 46668
+    password: 262bc90c-969c-4725-b5c5-9acffbe9d127
+    udp: true
+    sni: q08m.vgraxiw73s.hasyaf.cn
+
 
 proxy-groups:
   - name: PROXY
     type: select
     proxies:
-      - Seattle
       - HK家宽1
-      - MY节点1
-      - 🇸🇬新加坡01
-      - 🇸🇬新加坡02
       - lapink原生ip
+      - "🇨🇳 碧海☁️ 台湾-01"
+      - "🇭🇰 碧海☁️ 香港-01"
+      - "🇭🇰 碧海☁️ 香港-02"
+      - "🇭🇰 碧海☁️ 香港-03"
+      - "🇭🇰 碧海☁️ 香港-04"
+      - "🇸🇬 碧海☁️ 新加坡-01"
+      - "🇸🇬 碧海☁️ 新加坡-02"
+      - "🇯🇵 碧海☁️ 日本-01"
+      - "🇯🇵 碧海☁️ 日本-02"
+      - "🇯🇵 碧海☁️ 日本-03"
+      - "🇯🇵 碧海☁️ 日本-04"
+      - "🇺🇸 碧海☁️ 美国-01"
+      - "🇺🇸 碧海☁️ 美国-02"
+      - "🇰🇷 碧海☁️ 韩国-01"
 
+            
+      
+      
 rule-providers:
   reject:
     type: http
