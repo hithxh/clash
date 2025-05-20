@@ -14,154 +14,21 @@ dns:
     - 114.114.114.114
 
 proxies:
-  - name: "🇨🇳 碧海☁️ 台湾-01"
-    type: trojan
-    server: aafrtpfxr.twl01i9zjfegelp.5xfsur8v62.gosdk.xyz
-    port: 27201
-    password: 262bc90c-969c-4725-b5c5-9acffbe9d127
-    sni: q08m.vgraxiw73s.hasyaf.cn
+  - name: hk
+    type: vmess
+    server: cdn.cn-east.hk6.cloud.985996.xyz
+    port: 53009
+    uuid: c8e04c36-387a-3ad0-adb9-f877a3cc18cf
+    alterId: 0
+    cipher: auto
     udp: true
-  - name: "🇭🇰 碧海☁️ 香港-01"
-    type: trojan
-    server: aafrtpfxr.hkl01i9zjfegelp.5xfsur8v62.gosdk.xyz
-    port: 27101
-    password: 262bc90c-969c-4725-b5c5-9acffbe9d127
-    sni: q08m.vgraxiw73s.hasyaf.cn
-    udp: true
-  - name: "🇭🇰 碧海☁️ 香港-02"
-    type: trojan
-    server: aafrtpfxr.hkl02i9zjfegelp.5xfsur8v62.gosdk.xyz
-    port: 27102
-    password: 262bc90c-969c-4725-b5c5-9acffbe9d127
-    sni: q08m.vgraxiw73s.hasyaf.cn
-    udp: true
-  - name: "🇭🇰 碧海☁️ 香港-03"
-    type: trojan
-    server: aafrtpfxr.hkl04i9zjfegelp.5xfsur8v62.gosdk.xyz
-    port: 27103
-    password: 262bc90c-969c-4725-b5c5-9acffbe9d127
-    sni: q08m.vgraxiw73s.hasyaf.cn
-    udp: true
-  - name: "🇭🇰 碧海☁️ 香港-04"
-    type: trojan
-    server: aafrtpfxr.hkl03i9zjfegelp.5xfsur8v62.gosdk.xyz
-    port: 10465
-    password: 262bc90c-969c-4725-b5c5-9acffbe9d127
-    sni: q08m.vgraxiw73s.hasyaf.cn
-    udp: true
-    
-  - name: lapink原生ip
-    type: vless
-    server: tw-ty-line1-2-2.sudatech.store
-    port: 21082
-    uuid: e7adaa99-8363-3ec4-b849-307c99005405
-    network: tcp
-    tls: true
-    servername: learn.microsoft.com
-    flow: xtls-rprx-vision
-    skip-cert-verify: true
-    client-fingerprint: random
-    reality-opts:
-      public-key: tf7ZDGaue4C43MM0ECIfjOS-0kk7XMSqfnaSY4Er5Fc
-      short-id: 758719a6080f2767
-    ip-version: dual
-    udp: true
-  - name: HK家宽1
-    type: hysteria2
-    server: 118.141.151.139
-    port: 33443
-    tls: false
-    password: a3c43273-ab4a-4d46-9974-228c0f96a9dc
-    alpn:
-      - h3
-    skip-cert-verify: true
-    fast-open: false
-    ip-version: dual
-  - name: "🇸🇬 碧海☁️ 新加坡-01"
-    type: trojan
-    server: aafrtpfxr.sgl01i9zjfegelp.5xfsur8v62.gosdk.xyz
-    port: 27401
-    password: 262bc90c-969c-4725-b5c5-9acffbe9d127
-    udp: true
-    sni: q08m.vgraxiw73s.hasyaf.cn
-  - name: "🇸🇬 碧海☁️ 新加坡-02"
-    type: trojan
-    server: aafrtpfxr.sgl02i9zjfegelp.5xfsur8v62.gosdk.xyz
-    port: 42881
-    password: 262bc90c-969c-4725-b5c5-9acffbe9d127
-    udp: true
-    sni: q08m.vgraxiw73s.hasyaf.cn
-  - name: "🇯🇵 碧海☁️ 日本-01"
-    type: trojan
-    server: aafrtpfxr.jpl01i9zjfegelp.5xfsur8v62.gosdk.xyz
-    port: 27001
-    password: 262bc90c-969c-4725-b5c5-9acffbe9d127
-    udp: true
-    sni: q08m.vgraxiw73s.hasyaf.cn
-  - name: "🇯🇵 碧海☁️ 日本-02"
-    type: trojan
-    server: aafrtpfxr.jpl02i9zjfegelp.5xfsur8v62.gosdk.xyz
-    port: 27002
-    password: 262bc90c-969c-4725-b5c5-9acffbe9d127
-    udp: true
-    sni: q08m.vgraxiw73s.hasyaf.cn
-  - name: "🇯🇵 碧海☁️ 日本-03"
-    type: trojan
-    server: aafrtpfxr.jpl03i9zjfegelp.5xfsur8v62.gosdk.xyz
-    port: 22271
-    password: 262bc90c-969c-4725-b5c5-9acffbe9d127
-    udp: true
-    sni: q08m.vgraxiw73s.hasyaf.cn
-  - name: "🇯🇵 碧海☁️ 日本-04"
-    type: trojan
-    server: aafrtpfxr.jpl04i9zjfegelp.5xfsur8v62.gosdk.xyz
-    port: 22269
-    password: 262bc90c-969c-4725-b5c5-9acffbe9d127
-    udp: true
-    sni: q08m.vgraxiw73s.hasyaf.cn
-  - name: "🇺🇸 碧海☁️ 美国-01"
-    type: trojan
-    server: aafrtpfxr.usl02i9zjfegelp.5xfsur8v62.gosdk.xyz
-    port: 33505
-    password: 262bc90c-969c-4725-b5c5-9acffbe9d127
-    udp: true
-    sni: q08m.vgraxiw73s.hasyaf.cn
-  - name: "🇺🇸 碧海☁️ 美国-02"
-    type: trojan
-    server: aafrtpfxr.usl03i9zjfegelp.5xfsur8v62.gosdk.xyz
-    port: 33506
-    password: 262bc90c-969c-4725-b5c5-9acffbe9d127
-    udp: true
-    sni: q08m.vgraxiw73s.hasyaf.cn
-  - name: "🇰🇷 碧海☁️ 韩国-01"
-    type: trojan
-    server: aafrtpfxr.krl01i9zjfegelp.5xfsur8v62.gosdk.xyz
-    port: 46668
-    password: 262bc90c-969c-4725-b5c5-9acffbe9d127
-    udp: true
-    sni: q08m.vgraxiw73s.hasyaf.cn
 
 
 proxy-groups:
   - name: PROXY
     type: select
     proxies:
-      - HK家宽1
-      - lapink原生ip
-      - "🇨🇳 碧海☁️ 台湾-01"
-      - "🇭🇰 碧海☁️ 香港-01"
-      - "🇭🇰 碧海☁️ 香港-02"
-      - "🇭🇰 碧海☁️ 香港-03"
-      - "🇭🇰 碧海☁️ 香港-04"
-      - "🇸🇬 碧海☁️ 新加坡-01"
-      - "🇸🇬 碧海☁️ 新加坡-02"
-      - "🇯🇵 碧海☁️ 日本-01"
-      - "🇯🇵 碧海☁️ 日本-02"
-      - "🇯🇵 碧海☁️ 日本-03"
-      - "🇯🇵 碧海☁️ 日本-04"
-      - "🇺🇸 碧海☁️ 美国-01"
-      - "🇺🇸 碧海☁️ 美国-02"
-      - "🇰🇷 碧海☁️ 韩国-01"
+      - hk
 
             
       
