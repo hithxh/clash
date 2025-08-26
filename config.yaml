@@ -18,11 +18,14 @@ proxies:
     type: vmess
     server: cdn.cn-east.hk6.cloud.985996.xyz
     port: 53009
-    password: c8e04c36-387a-3ad0-adb9-f877a3cc18cf
     uuid: F5AE5D49-CC29-4F64-93AC-3FB8EE6987B4
-    sni: "www.bing.com"
-    skip-cert-verify: true
     alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: ""
+    skip-cert-verify: true
 proxy-groups:
   - name: PROXY
     type: select
