@@ -14,41 +14,19 @@ dns:
     - 114.114.114.114
 
 proxies:
-  - name: hk
+  - name: tg
     type: vmess
     server: cdn.cn-east.hk6.cloud.985996.xyz
     port: 53009
-    uuid: c8e04c36-387a-3ad0-adb9-f877a3cc18cf
-    alterId: 0
-    cipher: auto
-    udp: true
-  - {"name":"🇸🇬【亚洲】新加坡01丨直连","type":"hysteria2","server":"sg01.poke-mon.xyz","port":20000,"password":"793852e9-0ff3-4979-97df-fe31b152ce40","sni":"www.bing.com","skip-cert-verify":true}
-  - {"name":"🇸🇬【亚洲】新加坡02丨直连","type":"hysteria2","server":"sg02.poke-mon.xyz","port":20000,"password":"793852e9-0ff3-4979-97df-fe31b152ce40","sni":"www.bing.com","skip-cert-verify":true}
-  - {"name":"🇺🇸【北美洲】美国 | 直连","type":"hysteria2","server":"us01.poke-mon.xyz","port":20000,"password":"793852e9-0ff3-4979-97df-fe31b152ce40","sni":"www.bing.com","skip-cert-verify":true}
-  - {"name":"[hy2]洛杉矶2","type":"hysteria2","server":"74.48.64.203","port":29001,"password":"95efb4f7-a65e-4893-a9f9-5cc167fd4c45","sni":"cn.bing.com","skip-cert-verify":true}
-  - {"name":"🇯🇵 免费-日本2-Ver.7","type":"vmess","server":"z0fnh-g06.jp02-9a99-vm0.entry.fr0307a.art","port":11778,"cipher":"auto","uuid":"7ffe0d37-1f0c-39e4-91a0-7a2efdf32c07","alterId":1,"tls":false,"skip-cert-verify":true,"network":""}
-  - {"name":"🇯🇵 免费-日本3-Ver.6","type":"vmess","server":"aczau-g06.jp03-7d22-vm0.entry.fr0307a.art","port":21586,"cipher":"auto","uuid":"7ffe0d37-1f0c-39e4-91a0-7a2efdf32c07","alterId":1,"tls":true,"skip-cert-verify":true,"network":""}
-  - {"name":"🇯🇵 免费-日本4-Ver.7","type":"vmess","server":"luoex-g06.jp04-3771-vm0.entry.fr0307a.art","port":449,"cipher":"auto","uuid":"7ffe0d37-1f0c-39e4-91a0-7a2efdf32c07","alterId":1,"tls":false,"skip-cert-verify":true,"network":""}
-  - {"name":"🇯🇵 免费-日本5-Ver.8","type":"vmess","server":"b5r8v-g06.jp05-6786-vm0.entry.fr0307a.art","port":46487,"cipher":"auto","uuid":"7ffe0d37-1f0c-39e4-91a0-7a2efdf32c07","alterId":1,"tls":false,"skip-cert-verify":true,"network":""}
-  - {"name":"🇯🇵 免费-日本6-Ver.7","type":"vmess","server":"r6yjg-g06.jp06-7c5a-vm0.entry.fr0307a.art","port":28788,"cipher":"auto","uuid":"7ffe0d37-1f0c-39e4-91a0-7a2efdf32c07","alterId":1,"tls":true,"skip-cert-verify":true,"network":""}
-  - {"name":"🇯🇵 免费-日本7-Ver.1","type":"vmess","server":"ca854-g06.jp07-1f28-vm0.entry.fr0307a.art","port":28788,"cipher":"auto","uuid":"7ffe0d37-1f0c-39e4-91a0-7a2efdf32c07","alterId":1,"tls":false,"skip-cert-verify":true,"network":""}
-
-
+    password: c8e04c36-387a-3ad0-adb9-f877a3cc18cf
+    uuid: F5AE5D49-CC29-4F64-93AC-3FB8EE6987B4
+    sni: "www.bing.com"
+    skip-cert-verify: true
 proxy-groups:
   - name: PROXY
     type: select
     proxies:
-      - hk
-      - 🇸🇬【亚洲】新加坡01丨直连
-      - 🇸🇬【亚洲】新加坡02丨直连
-      - 🇺🇸【北美洲】美国 | 直连
-      - '[hy2]洛杉矶2'
-      - 🇯🇵 免费-日本2-Ver.7
-      - 🇯🇵 免费-日本3-Ver.6
-      - 🇯🇵 免费-日本4-Ver.7
-      - 🇯🇵 免费-日本5-Ver.8
-      - 🇯🇵 免费-日本6-Ver.7
-      - 🇯🇵 免费-日本7-Ver.1
+      - tg
 
             
       
