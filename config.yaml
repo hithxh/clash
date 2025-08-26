@@ -22,6 +22,7 @@ proxies:
     uuid: F5AE5D49-CC29-4F64-93AC-3FB8EE6987B4
     sni: "www.bing.com"
     skip-cert-verify: true
+    alterId: 0
 proxy-groups:
   - name: PROXY
     type: select
