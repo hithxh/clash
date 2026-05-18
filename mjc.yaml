@@ -16,7 +16,7 @@ dns:
 proxies:
   - name: Dallas
     type: hysteria2
-    server: 23.95.39.40
+    server: 11111111
     port: 35218
     password: bc067db8
     sni: www.bing.com
