@@ -13,18 +13,29 @@ dns:
     - 1.1.1.1
     - 114.114.114.114
 proxies:
-  - name: Misaka-Hysteria2
+  - name: "US"
     type: hysteria2
     server: 23.95.39.40
     port: 38337
-    password: 10742167
+    password: "10742167"
     sni: www.bing.com
     skip-cert-verify: true
+    udp: true
+
+  - name: "HK"
+    type: vmess
+    server: cdn.cn-east.hk6.cloud.985996.xyz
+    port: 53009
+    uuid: c8e04c36-387a-3ad0-adb9-f877a3cc18cf
+    alterId: 0
+    cipher: auto
+    udp: true
 proxy-groups:
   - name: Proxy
     type: select
     proxies:
-      - Misaka-Hysteria2
+      - US
+      - HK
       
 rules:
   - GEOIP,CN,DIRECT
