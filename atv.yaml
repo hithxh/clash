@@ -17,7 +17,7 @@ proxies:
     type: hysteria2
     server: 23.95.39.40
     port: 38337
-    password: "10742167"
+    auth: "10742167"
     sni: www.bing.com
     skip-cert-verify: true
     udp: true
