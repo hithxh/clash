@@ -13,7 +13,7 @@ dns:
     - 1.1.1.1
     - 114.114.114.114
 proxies:
-  - name: "US"
+  - name: US
     type: hysteria2
     server: 23.95.39.40
     port: 38337
@@ -22,7 +22,7 @@ proxies:
     skip-cert-verify: true
     udp: true
 
-  - name: "HK"
+  - name: HK
     type: vmess
     server: cdn.cn-east.hk6.cloud.985996.xyz
     port: 53009
@@ -30,6 +30,12 @@ proxies:
     alterId: 0
     cipher: auto
     udp: true
+proxy-groups:
+  - name: Proxy
+    type: select
+    proxies:
+      - US
+      - HK
 rules:
   - IP-CIDR,1.1.1.3/32,DIRECT
   - DOMAIN,clash.razord.top,DIRECT
